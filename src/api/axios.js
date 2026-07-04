@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'http://localhost:8080/api',
+  baseURL: 'https://hjfraudguard.onrender.com/api',
 })
 
 // Automatically attach the JWT token (if we have one) to every request
