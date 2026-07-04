@@ -62,7 +62,7 @@ function Analytics() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-8">
         {/* Header */}
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex flex-col sm:flex-row justify-between gap-4 sm:items-center mb-8">
           <div>
             <h1 className="text-3xl font-bold gradient-text">Analytics</h1>
             <p className="text-white/40 text-sm mt-1">Model performance & transaction insights</p>
@@ -88,7 +88,7 @@ function Analytics() {
               <p className="text-white/40 text-xs">PyTorch Autoencoder • Trained on Kaggle Credit Card Fraud Dataset</p>
             </div>
           </div>
-          <div className="grid grid-cols-6 gap-3">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
             {metrics.map(m => (
               <div key={m.label} className="glass-card p-4 text-center">
                 <span className="text-xl block mb-2">{m.icon}</span>
@@ -100,7 +100,7 @@ function Analytics() {
         </div>
 
         {/* Charts Grid */}
-        <div className="grid grid-cols-2 gap-6 mb-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
           {/* Pie */}
           <div className="glass p-6">
             <h3 className="text-white font-semibold mb-1">Fraud vs Normal</h3>

@@ -31,7 +31,8 @@ function Login() {
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl float-anim" style={{animationDelay: '3s'}} />
       <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl float-anim" style={{animationDelay: '1.5s'}} />
 
-      <div className="relative z-10 w-full max-w-md px-6">
+     <div className="relative z-10 w-full max-w-md px-4 sm:px-6">
+ 
         {/* Logo */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl glass gradient-border mb-4 glow-blue">
@@ -94,7 +95,7 @@ function Login() {
         </div>
 
         {/* Stats strip */}
-        <div className="grid grid-cols-3 gap-3 mt-4">
+        <div className="grid grid-cols-3 gap-2 mt-4">
           {[
             { label: 'AUC Score', value: '0.97' },
             { label: 'Transactions', value: '285K+' },

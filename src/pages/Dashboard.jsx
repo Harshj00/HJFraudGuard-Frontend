@@ -61,7 +61,7 @@ function Dashboard() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-8">
         {/* Header */}
-        <div className="flex justify-between items-center mb-8">
+        <div className="flex flex-col sm:flex-row justify-between gap-4 sm:items-center mb-8">
           <div>
             <h1 className="text-3xl font-bold gradient-text">HJFraudGuard</h1>
             <p className="text-white/40 text-sm mt-1">Real-time AI Fraud Detection</p>
@@ -79,7 +79,7 @@ function Dashboard() {
         </div>
 
         {/* Bento Stats Grid */}
-        <div className="grid grid-cols-3 gap-4 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
           <StatCard label="Total Transactions" value={transactions.length} color="text-white" icon="💳" delay="0s" />
           <StatCard label="Fraud Detected" value={fraudCount} color="text-red-400" icon="🚨" delay="0.1s" />
           <StatCard label="Fraud Rate" value={`${fraudRate}%`} color="text-yellow-400" icon="📈" delay="0.2s" />
@@ -110,7 +110,7 @@ function Dashboard() {
         {/* Check Transaction Form */}
         <div className="glass p-6 mb-6">
           <h2 className="text-white font-semibold mb-4">🔍 Check Transaction</h2>
-          <form onSubmit={handleCreate} className="grid grid-cols-4 gap-3">
+          <form onSubmit={handleCreate} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             <div>
               <label className="text-white/40 text-xs mb-1 block">Amount (₹)</label>
               <input type="number" step="0.01" required value={form.amount}
